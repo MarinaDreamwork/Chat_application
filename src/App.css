@@ -96,16 +96,15 @@
   padding-top: 4px;
 }
 
-.message-row {
-  float: left;
-  width: 100%;
+.message-container {
   display: flex;
-  margin-left: 18px;
 }
 
 .message-block {
   width: 100%;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
 }
 
 .message-avatar {
@@ -117,10 +116,11 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 48px;
+  margin-right: 5px;
 }
 
 .message {
-  padding: 12px;
+  padding: 10px;
   font-size: 16px;
   border-radius: 6px;
   max-width: 60%;
@@ -131,26 +131,29 @@
   object-fit: cover;
   border-radius: 6px;
   height: 30vw;
-  /* width: 30vw; */
   max-height: 200px;
   max-width: 200px;
   min-height: 100px;
   min-width: 100px;
 }
 
-.read-receipts {
-  position: relative;
-  bottom: 6px;
+.message-check {
+  display: flex;
+  justify-content: end;
 }
 
-.read-receipt {
-  width: 13px;
-  height: 13px;
-  border-radius: 13px;
-  margin: 1.5px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 14px;
+.message-time {
+  font-size: 14px;
+}
+
+.message-check .check-icon {
+  color: green;
+  font-size: 15px;
+  padding-top: 5px;
+}
+
+.second-icon-check {
+  margin-left: -10px;
 }
 
 .message-form-container {
